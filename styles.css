@@ -178,3 +178,8 @@ form textarea {
 .submit-btn:hover {
     background-color: #2c81c5;
 }
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
