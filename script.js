@@ -13,7 +13,7 @@ function searchDestinations() {
   searchResultsSection.style.display = 'block';
 
   // Condiciones para búsqueda
-  if (searchQuery.includes('playa')) {
+  if (searchQuery.includes('beach ')) {
     // Mostrar resultados para "playa"
     resultsContainer.innerHTML = `
       <h3>Playa de Cancún</h3>
@@ -21,13 +21,21 @@ function searchDestinations() {
       <img src="cancun1.webp" alt="Playa de Cancún">
       <img src="cancun2.webp" alt="Playa de Cancún">
     `;
-  } else if (searchQuery.includes('templo')) {
+  } else if (searchQuery.includes('temple')) {
     // Mostrar resultados para "templo"
     resultsContainer.innerHTML = `
       <h3>Templo de Angkor Wat</h3>
       <p>El Templo de Angkor Wat es uno de los templos más grandes y famosos del mundo, ubicado en Camboya.</p>
       <img src="angkor1.jpg" alt="Templo de Angkor Wat">
       <img src="angkor2.jpg" alt="Templo de Angkor Wat">
+    `;
+  } else if (searchQuery.includes('country')) {
+    // Mostrar resultados para "ciudad"
+    resultsContainer.innerHTML = `
+      <h3>Roma, Italia</h3>
+      <p>Roma es una de las ciudades más históricas del mundo, con monumentos como el Coliseo y la Fontana di Trevi.</p>
+      <img src="italia1.jpg" alt="Roma">
+      <img src="italia1.jpg" alt="Roma">
     `;
   } else {
     // Si no se encuentra ninguna coincidencia
