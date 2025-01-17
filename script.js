@@ -34,8 +34,8 @@ function searchDestinations() {
     resultsContainer.innerHTML = `
       <h3>Roma, Italia</h3>
       <p>Roma es una de las ciudades más históricas del mundo, con monumentos como el Coliseo y la Fontana di Trevi.</p>
-      <img src="italia2.jpg" alt="Roma">
-      <img src="italia1.webp" alt="Roma">
+      <img src="italia2.jpg" alt="Italia Roma">
+      <img src="italia1.webp" alt="Italia">
     `;
   } else {
     // Si no se encuentra ninguna coincidencia
