@@ -13,7 +13,7 @@ function searchDestinations() {
   searchResultsSection.style.display = 'block';
 
   // Condiciones para búsqueda
-  if (searchQuery.includes('beach ')) {
+  if (searchQuery.includes('beach')) {
     // Mostrar resultados para "playa"
     resultsContainer.innerHTML = `
       <h3>Playa de Cancún</h3>
