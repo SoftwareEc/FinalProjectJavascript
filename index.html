@@ -11,56 +11,39 @@
     <h1>Viaje Ideal</h1>
     <p>Encuentra tu próximo destino basado en tus preferencias</p>
 
-
-  <!-- Barra de navegación -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="about.html">Acerca de Nosotros</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-    </ul>
-    <!-- Barra de búsqueda -->
-    <div class="search-container">
-      <input type="text" placeholder="Buscar..." class="search-box">
- <button class="search-btn" onclick="searchDestinations()">🔍</button>
-    </div>
-    <!-- Botón transparente -->
-    <button class="transparent-btn">Soporte</button>
-  </nav>
+    <!-- Barra de navegación -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Acerca de Nosotros</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+      <!-- Barra de búsqueda -->
+      <div class="search-container">
+        <input type="text" placeholder="Buscar..." class="search-box" id="searchInput">
+        <button class="search-btn" onclick="searchDestinations()">🔍</button>
+      </div>
+      <!-- Botón transparente -->
+      <button class="transparent-btn">Soporte</button>
+    </nav>
   </header>
+
   <!-- Sección de introducción -->
   <section>
     <h2>Bienvenidos a Viaje Ideal</h2>
     <p>Descubre los destinos ideales para tu próximo viaje según tus preferencias. Conoce lo que ofrecen las mejores playas, templos y países del mundo.</p>
   </section>
 
-  <!-- Recomendación de Playa -->
-  <section>
-    <h3>Playa de Cancún</h3>
-    <p>Cancún es conocida por sus hermosas playas de aguas cristalinas y arenas blancas.</p>
-    <img src="cancun1.webp" alt="Playa de Cancún">
-    <img src="cancun2.webp" alt="Playa de Cancún">
-  </section>
-
-  <!-- Recomendación de Templo -->
-  <section>
-    <h3>Templo de Angkor Wat</h3>
-    <p>El Templo de Angkor Wat es uno de los templos más grandes y famosos del mundo, ubicado en Camboya.</p>
-    <img src="angkor1.jpg" alt="Templo de Angkor Wat">
-    <img src="angkor2.jpg" alt="Templo de Angkor Wat">
-  </section>
-
-  <!-- Recomendación de País -->
-  <section>
-    <h3>Italia</h3>
-    <p>Italia ofrece una rica historia, arquitectura impresionante, y paisajes inolvidables, siendo un destino ideal para todo tipo de viajeros.</p>
-    <img src="italia1.webp" alt="Italia">
-    <img src="italia2.jpg" alt="Italia">
+  <!-- Contenedor para resultados de búsqueda -->
+  <section id="searchResults" style="display: none;">
+    <h3>Resultados de Búsqueda</h3>
+    <div id="resultsContainer"></div>
   </section>
 
   <footer>
     <p>&copy; 2025 Viaje Ideal</p>
   </footer>
-    <script src="scripts.js"></script>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
